@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="baidu.css" />
+    <script src="jquery.js"></script>
+    <script src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.min.js"></script>
+	<script>
+	$(document).ready(function() {
+			$('#baidu').fullpage({
+				navigation:true,
+				navigationTooltips:["登录百度舆情","领先：数据收集与处理","全面：舆情分析逻辑与架构","专业：专业数据可视化"],
+				afterLoad:function(anchorLink,index){
+					$("#baidu").removeAttr("id");
+					$("#baidu").eq(index).addClass("active");
+				},
+				
+			});
+			$(".down").click(function(){
+				$.fn.fullpage.moveSectionDown()
+			})
+		});
+	        
+	
+		
+		
+		
+		
+	</script>
+	<body>
+		<div id="baidu">
+            <div class="section">
+                <div class="content">
+                	<img src="imgs/19.png" class="bw"/>
+                	<img src="imgs/10.png" class="pl"/>
+                	<img src="imgs/9.png" class="cl"/>
+                	<img src="imgs/2.png" class="down"/>
+                	<div class="bt">
+                		
+                	</div>
+                	<img src="imgs/33.png" class="chuan"/>
+                	<img src="imgs/14.png" class="leng1"/>
+                	<img src="imgs/5.png" class="leng2"/>
+                	<img src="imgs/16.png" class="leng3"/>
+                	<img src="imgs/index.png" class="user"/>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                 	<img src="imgs/11.png" class="lx"/>
+                	<img src="imgs/7.png" class="shu"/>
+                	<div class="text">
+                		<h1>数据收集与处理</h1>
+                		<p>
+                			15年专业数据收集与语义分析技术积累
+                			<br />
+                			卓越极致，不断攀登
+                		</p>
+                	</div>
+                	<img src="imgs/2.png" class="down"/>  
+                	<div class="box1"></div>
+                	<div class="box2"></div>
+                	<div class="box3"></div>
+                	<div class="box4"></div>
+                	<div class="box5"></div>               	
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                 	<img src="imgs/12.png" class="lx"/>
+                	<img src="imgs/1.png" class="shu"/>
+                	<div class="text">
+                		<h1>舆情分析逻辑与架构</h1>
+                		<p>
+                			声量诊断、传播分析、情感提炼、受众画像
+                			<br />
+                			有方法论，更有智慧
+                		</p>
+                	</div>
+                	<img src="imgs/2.png" class="down"/> 
+                	<div class="wave"></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="content">
+                 	<img src="imgs/134.png" class="lx"/>
+                	<img src="imgs/90.png" class="list"/>
+                	<img src="imgs/8.png" class="qu"/>
+                	<div class="text">
+                		<h1>专业数据可视化</h1>
+                		<p>
+                			非凡的数据洞悉和可视化能力
+                			<br />
+                			精研数据，惊艳所见
+                		</p>
+                	</div>              	
+                </div>
+            </div>
+        </div>
+        <div class="fix">
+        	<div class="topnr">
+        	<a href="www.baidu.com" class="logo"></a>
+        	<div class="nav_left">
+        		<ul>
+        			<li>
+        				<a href="#">首页</a>
+        			</li>
+        			<li>
+        				<a href="#">产品介绍</a>
+        			</li>
+        			<li>
+        				<a href="#">用户版</a>
+        			</li>
+        		</ul>
+        	</div>
+        	<div class="nav_right">
+        		<a href="#" class="app">
+        			手机客户端
+        			<i class="hot"></i>
+        			<div class="dr">
+        			<div class="drop">
+        				<div class="title">扫码下载</div>
+        				<div class="con">
+        					<div class="adr">
+        						<i></i>
+        						<p>安卓</p>
+        					</div>
+        					<div class="ios">
+        						<i></i>
+        						<p>ios</p>
+        					</div>
+        				</div>
+        			</div>
+        			</div>
+        		</a>
+        		<a href="#">百度司南</a>
+        		<a href="#">联系我们</a>
+        		<a href="#" class="aply">申请试用</a>
+        	</div>
+        	</div>
+        </div>
+	</body>
+</html>
